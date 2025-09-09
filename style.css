@@ -1,1 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
 
+body {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b); /* خلفية داكنة */
+    color: #fff;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Über mich */
+#about {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#about h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #00aaff; /* لون مميز للاسم */
+}
+
+#about p {
+    font-size: 1.1em;
+    color: #cfd8dc; /* لون فاتح للنص */
+}
+
+/* Fähigkeiten */
+#skills {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-list li {
+    background-color: #1b263b;
+    padding: 12px 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.skills-list li:hover {
+    background-color: #00aaff;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+/* Projekte */
+#projects {
+    margin-bottom: 50px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #1b263b;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.project-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+/* تعديل ترتيب الأزرار لتكون جنب بعض */
+.project-card .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.project-card .buttons a {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #00aaff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.project-card .buttons a:hover {
+    background-color: #0077aa;
+}
+
+/* Kontakt */
+#contact {
+    text-align: center;
+}
+
+#contact a {
+    color: #00aaff;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}

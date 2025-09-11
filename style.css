@@ -76,14 +76,26 @@ body {
   border-radius: 15px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
 }
 
 .project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+  background-color: #162f4f; /* لون مختلف عند hover */
 }
 
+.project-card h3 {
+  margin-bottom: 5px;
+}
+
+.project-card p {
+  font-size: 0.95em;
+  margin-bottom: 10px;
+  color: #cfd8dc;
+}
+
+/* صورة المشروع */
 .project-card img {
   max-width: 100%;
   border-radius: 10px;
@@ -105,11 +117,12 @@ body {
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s;
 }
 
 .project-card .buttons a:hover {
   background-color: #0077aa;
+  transform: translateY(-2px);
 }
 
 /* Kontakt */
